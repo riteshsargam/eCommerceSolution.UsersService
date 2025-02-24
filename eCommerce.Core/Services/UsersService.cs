@@ -26,7 +26,7 @@ internal class UsersService : IUsersService
 
         return new AuthenticationResponse
             (user.UserID, user.Email, user.PersonName,
-            user.Gender, "token", Sucess: true);
+            user.Gender, "token", Success: true);
 
     }
 
@@ -55,6 +55,6 @@ internal class UsersService : IUsersService
             registeredUser.PersonName,
             registeredUser.Gender,
             "token",
-            Sucess: true);
+            Success: true);
     }
 }
