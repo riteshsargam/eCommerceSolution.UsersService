@@ -10,7 +10,7 @@ public class DapperDbContext
     public DapperDbContext(IConfiguration configuration)
     {
         _configuration = configuration;
-        string connectionString = _configuration.GetConnectionString("PostgresConnection");
+        string? connectionString = _configuration.GetConnectionString("PostgresConnection");
 
         //Create a new NpgsqlConnection with the retrived connection string
         _connection = new NpgsqlConnection(connectionString);
